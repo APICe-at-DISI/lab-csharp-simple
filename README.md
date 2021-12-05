@@ -48,7 +48,7 @@ Scopo dell'esercizio è imparare a modellare ed implementare in .NET un oggetto 
 In particolare, lo studente dovrà modellare ed implementare una classe una classe che rappresenti una calcolatrice di numeri complessi.
 A tal fine, si prenda in considerazione la classe `Calculator` ed i suggerimenti puntuali ivi forniti e se ne completi il codice affinché l'esecuzione di `Program` abbia senso.
 
-Si immagini la calcolatrice come avente un display capace di visualizzare un solo numero complesso alla volta e 3 tasti: '+', '-' e '='.
+Si immagini la calcolatrice come avente un display capace di visualizzare un solo numero complesso alla volta e 3 tasti: '+', '-', '=' e 'Reset'.
 Properità e metodi dovranno modellare questa situazione.
 Si aggiungano campi privati atti a modellare lo stato interno della calcolatrice.
 
