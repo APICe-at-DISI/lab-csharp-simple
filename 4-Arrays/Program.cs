@@ -74,38 +74,38 @@ namespace Arrays
         /// TODO: uncomment the commented code, if any
         static void Main(string[] args)
         {
-            Complex[] numbers = new[] {
-                new Complex(0, 0),
-                new Complex(1, 1),
-                new Complex(0, 1), 
-                new Complex(-2, 2),
-                new Complex(-3, 0),
-                new Complex(-2, -2),
-                new Complex(0, -4),
-                new Complex(1, -1),
-                new Complex(1, 0)
-            }; 
-            
-            Complex[] orderedByPhase = new[] {
-                new Complex(0, 0),
-                new Complex(1, 1),
-                new Complex(0, 1), 
-                new Complex(-2, 2),
-                new Complex(-3, 0), 
-                new Complex(-2, -2),
-                new Complex(0, -4), 
-                new Complex(1, -1),
-                new Complex(1, 0), 
-            };
-
-            var cloned = numbers;
-            
-            ArraysAreEqual(cloned, numbers);
-            ArraysAreEqual(SortByPhase(numbers), orderedByPhase);
-            ArraysAreEqual(numbers, cloned);
-            CheckComplexNumber(MaxModulus(numbers), new Complex(0, -4));
-            CheckComplexNumber(MaxModulus(orderedByPhase), new Complex(0, -4));
-            CheckComplexNumber(MaxModulus(cloned), new Complex(0, -4));
+            // Complex[] numbers = new[] {
+            //     new Complex(0, 0),
+            //     new Complex(1, 1),
+            //     new Complex(0, 1), 
+            //     new Complex(-2, 2),
+            //     new Complex(-3, 0),
+            //     new Complex(-2, -2),
+            //     new Complex(0, -4),
+            //     new Complex(1, -1),
+            //     new Complex(1, 0)
+            // }; 
+            //
+            // Complex[] orderedByPhase = new[] {
+            //     new Complex(0, 0),
+            //     new Complex(1, 1),
+            //     new Complex(0, 1), 
+            //     new Complex(-2, 2),
+            //     new Complex(-3, 0), 
+            //     new Complex(-2, -2),
+            //     new Complex(0, -4), 
+            //     new Complex(1, -1),
+            //     new Complex(1, 0), 
+            // };
+            //
+            // var cloned = numbers;
+            //
+            // ArraysAreEqual(cloned, numbers);
+            // ArraysAreEqual(SortByPhase(numbers), orderedByPhase);
+            // ArraysAreEqual(numbers, cloned);
+            // CheckComplexNumber(MaxModulus(numbers), new Complex(0, -4));
+            // CheckComplexNumber(MaxModulus(orderedByPhase), new Complex(0, -4));
+            // CheckComplexNumber(MaxModulus(cloned), new Complex(0, -4));
         }
 
         /// <summary>
