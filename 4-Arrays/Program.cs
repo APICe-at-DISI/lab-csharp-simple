@@ -87,15 +87,15 @@ namespace Arrays
             // }; 
             //
             // Complex[] orderedByPhase = new[] {
-            //     new Complex(0, 0),
-            //     new Complex(1, 1),
-            //     new Complex(0, 1), 
-            //     new Complex(-2, 2),
-            //     new Complex(-3, 0), 
             //     new Complex(-2, -2),
-            //     new Complex(0, -4), 
+            //     new Complex(0, -4),
             //     new Complex(1, -1),
-            //     new Complex(1, 0), 
+            //     new Complex(0, 0),
+            //     new Complex(1, 0),
+            //     new Complex(1, 1),
+            //     new Complex(0, 1),
+            //     new Complex(-2, 2),
+            //     new Complex(-3, 0)
             // };
             //
             // var cloned = numbers;
