@@ -64,15 +64,15 @@ namespace Arrays
         public static Complex[] SortByPhase(Complex[] array)
         {
             var clone = Clone(array);
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < clone.Length; i++)
             {
                 for (int j = i - 1; j >= 0; j--)
                 {
                     if (clone[j + 1].Phase < clone[j].Phase)
                     {
-                        var temp = array[j];
-                        array[j] = array[j + 1];
-                        array[j + 1] = temp;
+                        var temp = clone[j];
+                        clone[j] = clone[j + 1];
+                        clone[j + 1] = temp;
                     }
                 }
             }
@@ -122,19 +122,19 @@ namespace Arrays
             }; 
             
             Complex[] orderedByPhase = new[] {
-                new Complex(0, 0),
-                new Complex(1, 1),
-                new Complex(0, 1), 
-                new Complex(-2, 2),
-                new Complex(-3, 0), 
                 new Complex(-2, -2),
-                new Complex(0, -4), 
+                new Complex(0, -4),
                 new Complex(1, -1),
-                new Complex(1, 0), 
+                new Complex(0, 0),
+                new Complex(1, 0),
+                new Complex(1, 1),
+                new Complex(0, 1),
+                new Complex(-2, 2),
+                new Complex(-3, 0)
             };
 
             var cloned = numbers;
-            
+
             ArraysAreEqual(cloned, numbers);
             ArraysAreEqual(SortByPhase(numbers), orderedByPhase);
             ArraysAreEqual(numbers, cloned);
